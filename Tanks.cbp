@@ -32,6 +32,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="DestroyableWall.cpp" />
+		<Unit filename="DestroyableWall.h" />
+		<Unit filename="MapModel.cpp" />
+		<Unit filename="MapModel.h" />
+		<Unit filename="MapObject.h" />
+		<Unit filename="Projectile.cpp" />
+		<Unit filename="Projectile.h" />
+		<Unit filename="TanksModel.cpp" />
+		<Unit filename="TanksModel.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
