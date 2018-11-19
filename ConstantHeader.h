@@ -1,0 +1,8 @@
+#ifndef CONSTANTHEADER_H_
+#define CONSTANTHEADER_H_
+
+const int NUMBER_OF_PLAYERS = 2;
+const int NUMBER_OF_SQUARES_PER_TANK = 4;
+const int WALL_HEALTH = 5;
+
+#endif // CONSTANTHEADER_H_

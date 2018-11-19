@@ -33,7 +33,31 @@ void MapModel::deleteMapObjects(int sizeOfMap)
     }
 }
 
-MapObject **MapModel::getMapObjects()
+MapObject ***MapModel::getMapObjects()
 {
+    if (!this->mapObjects)
+    {
+        mapObjects =  new MapObject**[MapModel::getInstance()->getNumberOfPlayers() * NUMBER_OF_SQUARES_PER_TANK]();
+        for (int i = 0; i< MapModel::getInstance()->getNumberOfPlayers() * NUMBER_OF_SQUARES_PER_TANK; i++){
+            *(mapObjects + i) = new MapObject*[MapModel::getInstance()->getNumberOfPlayers() * 4]();
+        }
+        for(int i = 0; i < MapModel::getInstance()->getNumberOfPlayers() * NUMBER_OF_SQUARES_PER_TANK; i++)
+        {
+            for (int j = 0; j < MapModel::getInstance()->getNumberOfPlayers() * NUMBER_OF_SQUARES_PER_TANK; j++)
+            {
+                *(*(mapObjects + i) + j) = new MapObject();
+            }
+        }
+    }
     return this->mapObjects;
+}
+
+void MapModel::setNumberOfPlayers(int no)
+{
+    this->m_noOfPlayers = no;
+}
+
+int MapModel::getNumberOfPlayers()
+{
+    return this->m_noOfPlayers;
 }

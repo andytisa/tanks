@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1542210873 source:c:\users\moisuc\desktop\tanks\tanks\destroyablewall.cpp
+	"DestroyableWall.h"
+
+1542210273 c:\users\moisuc\desktop\tanks\tanks\destroyablewall.h
+	"MapObject.h"
+
+1542632287 c:\users\moisuc\desktop\tanks\tanks\mapobject.h
+	"ConstantHeader.h"
+
+1542632220 source:c:\users\moisuc\desktop\tanks\tanks\main.cpp
+	<iostream>
+	"GenerateMap.h"
+	<stdlib.h>
+	<time.h>
+
+1542631556 source:c:\users\moisuc\desktop\tanks\tanks\mapmodel.cpp
+	"MapModel.h"
+
+1542631476 c:\users\moisuc\desktop\tanks\tanks\mapmodel.h
+	"MapObject.h"
+	"DestroyableWall.h"
+	"Projectile.h"
+	"TanksModel.h"
+
+1542202297 source:c:\users\moisuc\desktop\tanks\tanks\projectile.cpp
+	"Projectile.h"
+
+1542202290 c:\users\moisuc\desktop\tanks\tanks\projectile.h
+
+1542210921 source:c:\users\moisuc\desktop\tanks\tanks\tanksmodel.cpp
+	"TanksModel.h"
+
+1542210910 c:\users\moisuc\desktop\tanks\tanks\tanksmodel.h
+	"MapObject.h"
+	"Projectile.h"
+
+1542632318 source:c:\users\moisuc\desktop\tanks\tanks\generatemap.cpp
+	"GenerateMap.h"
+	<stdlib.h>
+
+1542625547 c:\users\moisuc\desktop\tanks\tanks\generatemap.h
+	"MapModel.h"
+
+1542632342 c:\users\moisuc\desktop\tanks\tanks\constantheader.h
+

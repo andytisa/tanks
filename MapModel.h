@@ -2,6 +2,9 @@
 #define MAPMODEL_H_
 
 #include "MapObject.h"
+#include "DestroyableWall.h"
+#include "Projectile.h"
+#include "TanksModel.h"
 
 class MapModel
 {
@@ -9,10 +12,11 @@ class MapModel
 private:
     static MapModel *m_instance;
     int m_noOfPlayers;
-    MapModel() : m_noOfPlayers(0)
+    MapModel() : m_noOfPlayers(0), mapObjects(0)
     {
+
     }
-    MapObject **mapObjects;
+    MapObject ***mapObjects;
 
 public:
 
@@ -22,9 +26,14 @@ public:
         delete m_instance;
     }
     void deleteMapObjects(int);
+
+    //Getters
     int getNumberOfPlayers();
-    MapModel* getInstance();
-    MapObject **getMapObjects();
+    static MapModel* getInstance();
+    MapObject ***getMapObjects();
+
+    //Setters
+    void setNumberOfPlayers(int);
 };
 
 
